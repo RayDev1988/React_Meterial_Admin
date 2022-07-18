@@ -3,6 +3,7 @@ import React from "react";
 var LayoutStateContext = React.createContext();
 var LayoutDispatchContext = React.createContext();
 
+
 function layoutReducer(state, action) {
   switch (action.type) {
     case "TOGGLE_SIDEBAR":
