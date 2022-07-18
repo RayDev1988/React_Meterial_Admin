@@ -7,10 +7,6 @@ import Layout from "./Layout";
 // pages
 import Error from "../pages/error";
 import Login from "../pages/login";
-import Main from "../main"
-import Blog from "../main/blog"
-import Home from "../main/home"
-import Contact from "../main/contact"
 
 
 // context
@@ -29,10 +25,6 @@ export default function App() {
           path="/app"
           render={() => <Redirect to="/app/dashboard" />}
         />
-        <Route path="/main" component={Main} />
-        <Route path="/home" component={Home} />
-        <Route path="/blog" component={Blog} />
-        <Route path="/contact" component={Contact} />
         <PrivateRoute path="/app" component={Layout} />
         <PublicRoute path="/login" component={Login} />
         <Route component={Error} />
